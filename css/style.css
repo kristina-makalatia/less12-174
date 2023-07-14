@@ -59,3 +59,60 @@
     height: 250px;
     resize:none;
 }
+
+
+/* pseudo elements */
+.hello::before {
+    content: 'Good Evening';
+    color:red;
+    font-size: 30px;
+}
+
+/* .hello::after {
+    content: '\00a9';
+    margin-left: 30px;
+} */
+
+.hello::after {
+    content: '';
+    margin-left: 30px;
+    width: 20px;
+    height: 2px;
+    background-color: blue;
+    display:inline-block;
+}
+
+/* header styles */
+.ul-flex {
+    display: flex;
+}
+.header-wraper {
+    background-color: lightblue;
+    padding: 30px;
+}
+.ul-flex li {
+    margin-right: 30px;
+}
+.li-item-a {
+    position: relative;
+    transition: all 2s;
+}
+.li-item-a::after {
+    content: '';
+    height: 2px;
+    background-color: #FF7420;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 0;
+    transition: all 2s;
+}
+.li-item-a:hover::after {
+    width: 100%;
+}
+.li-item-a:hover {
+    color:  #FF7420;
+}
+.image-block {
+    width: 100%;
+}

@@ -3,18 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="our website description">
+    <meta name="keywords" content="HTML, CSS, Flex,Responsive">
+    <meta name="author" content="kristina">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header class="header-wraper">
+      <nav>
+        <ul class="ul-flex">
+          <li><a class="li-item-a" href="">Home</a></li>
+          <li><a class="li-item-a" href="">News</a></li>
+          <li><a class="li-item-a" href="#services-section">Services</a></li>
+          <li><a class="li-item-a" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <!--bg image -->
     <section>
       <!-- <div class="bg-image"></div> -->
     </section>
 
+    <!-- pseuodo elements -->
+    <section id="services-section">
+      <p class="hello">hello2</p>
+      <span> &dollar; </span>
+      <div>
+        <img class="image-block" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="">
+      </div>
+    </section>
+
     <!-- form section -->
-    <section>
+    <section id="contact">
       <form class="form" action="">
         <div class="form-element">
           <label for="user-name">Username</label>
@@ -65,9 +87,13 @@
         </div>
 
         <div class="form-element">
-            <label for="user-message">Your Message</label>
-            <textarea name="message" id="user-message" class="textatea-element"></textarea>
-          </div>
+          <label for="user-message">Your Message</label>
+          <textarea
+            name="message"
+            id="user-message"
+            class="textatea-element"
+          ></textarea>
+        </div>
 
         <button class="btn-submit" type="submit">გაგზავნა</button>
       </form>
